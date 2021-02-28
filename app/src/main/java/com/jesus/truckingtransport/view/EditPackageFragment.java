@@ -53,7 +53,7 @@ public class EditPackageFragment extends Fragment {
         paquete = viewModel.getPaquete();
         etDescriptionE.setText(paquete.getDescripcion());
         etPrizeE.setText(paquete.getPrecio()+"");
-        
+
         btEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -56,7 +56,7 @@ public class LoginFragment extends Fragment {
                             NavHostFragment.findNavController(LoginFragment.this).navigate(R.id.action_LoginFragment_to_firstFragment);
                             Toast.makeText(getActivity(), "Sign In correctly", Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(getActivity(), "", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Error, ", Toast.LENGTH_SHORT).show();
                             tilPass.setError("Fill correctly the fields");
                             tilUser.setError("Fill correctly the fields");
                         }

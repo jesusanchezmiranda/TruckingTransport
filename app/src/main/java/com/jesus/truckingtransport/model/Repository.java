@@ -51,9 +51,6 @@ public class Repository {
                     public void onSuccess(AuthResult authResult) {
                         Log.v("XXXXX", "success");
                         currentUser = firebaseAuth.getCurrentUser();
-                        //Log.v("XXXXX", currentUser.getEmail() + "   " + currentUser.isEmailVerified());
-                        //Log.v("XXXXX", currentUser.toString());
-
                         resultado.setValue(true);
                     }
                 })
@@ -61,8 +58,7 @@ public class Repository {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Log.v("XXXXX", "failure " + e.getLocalizedMessage());
-                        currentUser = null; //firebaseAuth.getCurrentUser();
-                        //Log.v("XXXXX", "failure" + currentUser.toString());
+                        currentUser = null;
                         resultado.setValue(false);
                     }
                 });
@@ -136,29 +132,20 @@ public class Repository {
 
     public void updateTruckDriver(Camionero camionero){
         db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).set(camionero, SetOptions.merge());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).update("foto", camionero.getFoto());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).update( "nombre", camionero.getNombre());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).update("telefono", camionero.getTelefono());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).update("salario", camionero.getSalario());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).update("poblacion", camionero.getPoblacion());
     }
 
 
     public void updatePaquete(Paquete paquete){
         db.collection("user/"+ currentUser.getUid()+"/paquete").document(paquete.getDescripcion()).set(paquete, SetOptions.merge());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(paquete.getDescripcion()).update("descripcion", paquete.getDescripcion());
-//        db.collection("user/"+ currentUser.getUid()+"/camionero").document(paquete.getDescripcion()).update( "precio", paquete.getPrecio());
     }
 
 
     public void deleteTruckDriver(Camionero camionero){
         db.collection("user/"+ currentUser.getUid()+"/camionero").document(camionero.getNombre()).delete();
-
     }
 
     public void deletePaquete(Paquete paquete){
         db.collection("user/"+ currentUser.getUid()+"/paquete").document(paquete.getDescripcion()).delete();
-
     }
 
 
