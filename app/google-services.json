@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851074454683",
+    "project_id": "truckingtransport-76c9e",
+    "storage_bucket": "truckingtransport-76c9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851074454683:android:3cc2b053346ed8ab87223e",
+        "android_client_info": {
+          "package_name": "com.jesus.truckingtransport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851074454683-d1hjo74pqi4savd4n6ao8d5e2btos0bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD18JeOh9eMbmOJxsW7Kw-1VQcJCxPVQBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851074454683-d1hjo74pqi4savd4n6ao8d5e2btos0bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

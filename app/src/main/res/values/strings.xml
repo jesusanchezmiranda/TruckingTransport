@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TruckingTransport</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="trNom">TRANSPORTES S.L</string>
+    <string name="newCam">Insert a new Truck Driver</string>
+    <string name="edCam">Edit a Truck Driver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">desc</string>
+    <string name="delete">Delete</string>
+    <string name="editdelete">Edit / Delete Truck Driver</string>
+    <string name="insert">Insert Truck Driver</string>
+    <string name="insertPaquete">Insert package</string>
+    <string name="editdeleteP">Edit / Delete Package</string>
+    <string name="insertPackage">Insert Package</string>
+    <string name="check">Check your shipment</string>
+    <string name="newPaq">Insert a new Package</string>
+    <string name="editP">Edit a Package</string>
+    <string name="insert2">insert</string>
+    <string name="edit">edit</string>
+    <string name="URL">URL</string>
+    <string name="Name">Name</string>
+    <string name="Phone">Phone</string>
+    <string name="Salary">Salary</string>
+    <string name="Population">Population</string>
+    <string name="Description">Description</string>
+    <string name="Prize">Prize</string>
+    <string name="idTruckDriver">TruckDriver</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="signin">Sign In</string>
+</resources>

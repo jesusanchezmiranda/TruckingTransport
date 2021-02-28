@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".view.LoginFragment">
+
+    <Button
+        android:id="@+id/btSigIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@android:drawable/ic_menu_manage"
+        android:text="@string/signin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfPass" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/user"
+        app:endIconMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:text="User" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tfUser"
+        app:layout_constraintVertical_bias="0.23000002"
+        app:passwordToggleEnabled="true"
+        app:startIconContentDescription="aaaa"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Pass" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/Description"
+        android:src="@drawable/camion_de_reparto"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camion_de_reparto"
+        tools:srcCompat="@drawable/camion_de_reparto" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
